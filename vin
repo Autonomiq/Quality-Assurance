@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+<table class="wp-block-table">
+  <tbody>
+    <tr>
+    <td><strong>Sl</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Place</strong></td>
+      <td><strong>Date</strong></td>
+      <td><strong>Select Button</strong></td>
+      <td><strong>Comment</strong></td>
+      <td><strong>Books</strong></td>
+      <td><strong>Review</strong></td>
+      <td><strong>Choose</strong></td>
+    </tr>
+    <tr class="alt">
+    <td><input type="radio" name="siteID" value="" id="parallax"></td>
+      <td>Vin</td>
+      <td loc="1">Bangalore</td>
+      <td>2019-01-02</td>
+       <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+      <td> <select>
+  <option value="lotr">Lord of the Rings</option>
+  <option value="hdm">Dark Materials</option>
+  <option value="sim">Anne Series</option>
+  <option value="char">Jane Eyre</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>Vib</td>
+      <td loc="2">Bangalore</td>
+      <td>2019-02-15</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+      <td> <select>
+  <option value="lotr">Lord of the Rings</option>
+  <option value="hdm">Dark Materials</option>
+  <option value="sim">Anne Series</option>
+  <option value="char">Jane Eyre</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+    <tr class="alt">
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>SKM</td>
+      <td loc="3">France</td>
+      <td>2018-08-03</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+      <td> <select>
+  <option value="lotr">Lord of the Rings</option>
+  <option value="hdm">Dark Materials</option>
+  <option value="sim">Anne Series</option>
+  <option value="char">Jane Eyre</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>KJ</td>
+      <td>Chennai</td>
+      <td>2018-08-02</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+      <td> <select>
+  <option value="lotr">Lord of the Rings</option>
+  <option value="hdm">Dark Materials</option>
+  <option value="sim">Anne Series</option>
+  <option value="char">Jane Eyre</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="wp-block-table">
+  <tbody>
+    <tr>
+    <td><strong>No</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Location</strong></td>
+      <td><strong>Update Date</strong></td>
+       <td><strong>Select Button</strong></td>
+       <td><strong>Ca va</strong></td>
+<td><strong>Movies</strong></td>
+<td><strong>Review</strong></td>
+      <td><strong>Choose</strong></td>
+    </tr>
+    <tr class="alt">
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>RSD</td>
+      <td loc="1">Bangalore</td>
+      <td>2019-09-02</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+      <td> <select>
+  <option value="thriller">Jurassic Park</option>
+  <option value="disney">Beauty and the Beast</option>
+  <option value="horror">The Shinning</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>Shm</td>
+      <td loc="2">Mysore</td>
+      <td>2019-11-15</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+       <td> <select>
+  <option value="thriller">Jurassic Park</option>
+  <option value="disney">Beauty and the Beast</option>
+  <option value="horror">The Shinning</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+    <tr class="alt">
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>Anki</td>
+      <td loc="3">K</td>
+      <td>2018-08-03</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+       <td> <select>
+  <option value="thriller">Jurassic Park</option>
+  <option value="disney">Beauty and the Beast</option>
+  <option value="horror">The Shinning</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="siteID" value="" id="parallax"></td>
+
+      <td>KJ</td>
+      <td>Chennai</td>
+      <td>2018-08-02</td>
+      <td onClick="this.bgColor='#CDFFBF'">
+      Select
+      </td>
+      <td>
+        <input type="text" name="siteID" value="" id="siteID">
+      </td>
+       <td> <select>
+  <option value="thriller">Jurassic Park</option>
+  <option value="disney">Beauty and the Beast</option>
+  <option value="horror">The Shinning</option>
+</select> </td>
+      <td>
+        <input type="text" name="siteID" value="" id="parallax">
+      </td>
+      <td>
+        <input type="checkbox" name="sync" value="" id="sim">
+      </td>
+    </tr>
+  </tbody>
+</table>
