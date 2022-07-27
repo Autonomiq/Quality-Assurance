@@ -75,8 +75,12 @@
       </td>
       <td> <select>
   <option value="lotr">Lord of the Rings</option>
-  <option id="yesCheck" value="hdm">Dark Materials</option>
-        <script type="text/javascript">
+  <option id="yesCheck" value="hdm">Dark Materials</option>        
+  <option value="sim">Anne Series</option>
+  <option value="char">Jane Eyre</option>
+</select> </td>  
+             
+      <script type="text/javascript">
        function yesnoCheck() {
        if (document.getElementById("yesCheck").selected) {
            document.getElementById("ifYes").style.display = "block";
@@ -88,11 +92,6 @@
         <div id="ifYes" style="display: none;">
       <label for="car">Muu, mikä?</label> <input type="text" id="car" name="car" /><br />
       </div>
-        
-  <option value="sim">Anne Series</option>
-  <option value="char">Jane Eyre</option>
-</select> </td>  
-             
       
       <td>
         <input type="text" name="siteID" value="" id="parallax">
