@@ -75,10 +75,26 @@
       </td>
       <td> <select>
   <option value="lotr">Lord of the Rings</option>
-  <option value="hdm">Dark Materials</option>
+  <option id="yesCheck" value="hdm">Dark Materials</option>
   <option value="sim">Anne Series</option>
   <option value="char">Jane Eyre</option>
 </select> </td>
+      
+      <div id="ifYes" style="display: none;">
+      <label for="car">Muu, mikä?</label> <input type="text" id="car" name="car" /><br />
+      </div>
+      
+      <script type="text/javascript">
+       function yesnoCheck() {
+       if (document.getElementById("yesCheck").selected) {
+           document.getElementById("ifYes").style.display = "block";
+          } else {
+           document.getElementById("ifYes").style.display = "none";
+          }
+       }
+     </script>
+      
+      
       <td>
         <input type="text" name="siteID" value="" id="parallax">
       </td>
