@@ -14,6 +14,9 @@
   <script >
     var e = document.getElementById("shadowdom");
       e.attachShadow({mode: 'open'});
+	  function myFunction1() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
   e.shadowRoot.innerHTML = `
     <style> p { font-weight: bold; } </style>
     <p>User details</p>
@@ -40,7 +43,7 @@
   <label for="javascript">JavaScript</label>
 
   <br>  
-<button type="button">Click Me!</button>
+<button onclick="myFunction1()">Click me</button>
   <p>Please select your age:</p>
   <input type="radio" id="age1" name="age" value="30">
   <label for="age1">0 - 30</label><br>
