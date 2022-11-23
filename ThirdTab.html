@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+  <div id="shadowdom">
+  </div>
+  <script >
+
+
+
+ function myFunctionnew(){
+
+window.open('https://login.salesforce.com/')
+}
+
+    var e = document.getElementById("shadowdom");
+      e.attachShadow({mode: 'open'});
+  e.shadowRoot.innerHTML = `
+    <style> p { font-weight: bold; } </style>
+    <p>ThirdTab</p>
+
+    <img src='https://asia.olympus-imaging.com/content/000107506.jpg' width=300 height =200></img>
+    <br>
+    <p>locatiion</p>
+    <select>
+    <option>India</option>
+        <option>America</option>
+    <option>Australia</option>
+    </select>
+    <br>
+    <br>
+     <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+ 
+<label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+      <p>Please select your favorite Web language:</p>
+     <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  
+  <br>  
+
+ 
+
+ 
+  `;
+  </script>
+	<script src="index.js">
+  
+ function myFunction() {
+ console.log('print')
+
+ 
+ 
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+  </script>
+  </body>
+</html>
