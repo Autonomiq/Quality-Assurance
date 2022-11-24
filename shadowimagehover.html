@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <template id="shadowdomtemplate">
+        <h2 id=a_h2 onclick="handle(event)">HTML Event XY</h2>
+        &nbsp;
+        &nbsp;
+        <span class=block onclick="handle(event)" id=a_span>Some long long discription text</span> <br /> <br />
+        &nbsp;
+        &nbsp;
+        <img width="400"  id=an_img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Queen_Elizabeth_II_in_March_2015.jpg" alt="some img" onclick="handle(event)" />
+        &nbsp; &nbsp;
+        <canvas id="a_canvas" width="300" height="200" onclick="handle(event)">
+        </canvas>
+        <br /> <br />
+        <label><span>Step Info</span>
+          <input id=step_info size=100 /></label>
+        &nbsp;
+        &nbsp;
+        <textarea id=output rows=30 onclick="handle(event)"></textarea>
+        
+ 
+    </template>
+
+
+
+  <div id="shadowdom">
+  </div>
+  <script>
+
+    var e = document.getElementById("shadowdom");
+    var shadowRoot = e.attachShadow({mode: 'open'})
+    shadowRoot.appendChild( shadowdomtemplate.content )
+
+  </script>
+
+
+<script type="text/javascript">
+    function _id(id) {
+    
+      return this.shadowRoot.getElementById(id);
+    }
+    function handle(e) {
+      var i, a, s = [];
+      for (i in e) {
+        try {
+          a = e[i];
+          if (typeof(a) != 'function') {
+            s.push(i + ' : ' + a);
+          }
+        } catch (x) {}
+      }
+      _id('output').value = s.join('\n');
+    }
+    function draw_canvas() {
+      var c = this.shadowRoot.getElementById("a_canvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(150, 100, 50, 0, 2 * Math.PI);
+      ctx.stroke();
+    }
+    
+    
+    draw_canvas();
+    </script>
+    
+      
+  </body>
+</html>
