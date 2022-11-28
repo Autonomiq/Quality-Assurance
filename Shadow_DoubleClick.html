@@ -9,65 +9,21 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-
     <template id="shadowdomtemplate">
-        
-<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
-
-<p id="demo"></p>
-
-
-
-       
- 
+ <p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
     </template>
-
-
-
+<p id="demo"></p>
   <div id="shadowdom">
   </div>
   <script>
-
     var e = document.getElementById("shadowdom");
     var shadowRoot = e.attachShadow({mode: 'open'})
     shadowRoot.appendChild( shadowdomtemplate.content )
-
-    function myFunction() {
+  </script>
+<script type="text/javascript">
+ function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
-    
-  </script>
-
-
-<script type="text/javascript">
-    function _id(id) {
-    
-      return this.shadowRoot.getElementById(id);
-    }
-    function handle(e) {
-      var i, a, s = [];
-      for (i in e) {
-        try {
-          a = e[i];
-          if (typeof(a) != 'function') {
-            s.push(i + ' : ' + a);
-          }
-        } catch (x) {}
-      }
-      _id('output').value = s.join('\n');
-    }
-    function draw_canvas() {
-      var c = this.shadowRoot.getElementById("a_canvas");
-      var ctx = c.getContext("2d");
-      ctx.beginPath();
-      ctx.arc(150, 100, 50, 0, 2 * Math.PI);
-      ctx.stroke();
-    }
-    
-    
-    draw_canvas();
     </script>
-    
-      
   </body>
 </html>
