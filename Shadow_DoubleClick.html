@@ -16,11 +16,7 @@
 
 <p id="demo"></p>
 
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
+
 
        
  
@@ -36,6 +32,10 @@ function myFunction() {
     var shadowRoot = e.attachShadow({mode: 'open'})
     shadowRoot.appendChild( shadowdomtemplate.content )
 
+    function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+    
   </script>
 
 
