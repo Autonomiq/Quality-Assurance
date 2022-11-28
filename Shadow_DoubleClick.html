@@ -9,21 +9,41 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
+
     <template id="shadowdomtemplate">
- <p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+        
+      
+      <p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+        
+ 
     </template>
-<p id="demo"></p>
+
+
+    <p id="demo"></p>
+    
+
   <div id="shadowdom">
   </div>
-  <script>
+
+    
+    <script>
+
     var e = document.getElementById("shadowdom");
     var shadowRoot = e.attachShadow({mode: 'open'})
     shadowRoot.appendChild( shadowdomtemplate.content )
-  </script>
-<script type="text/javascript">
- function myFunction() {
+
+   </script>
+
+
+   <script type="text/javascript">
+    
+  function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
+ 
+  
     </script>
+    
+      
   </body>
 </html>
